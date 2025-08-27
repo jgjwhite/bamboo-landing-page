@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Hero: React.FC = () => {
   return (
@@ -16,17 +17,17 @@ const Hero: React.FC = () => {
 
         {/* Content Block */}
         <div className="max-w-[800px] mx-auto text-center space-y-6 px-3 sm:px-0">
-          <h1 className="text-3xl sm:text-4xl font-semibold text-black">
+          <h1 className="text-black">
             The Next Generation of QSRs, Fulfilled by Trusted Partners
           </h1>
           
-          <p className="text-base sm:text-lg text-black">
+          <p className="text-black">
             Bamboo is the franchise system for the delivery era. We create national brands, and our operating partners fulfill them with PartnerPay™, guaranteeing earnings on every order.
           </p>
           
-          <button className="bg-black text-white px-6 py-7 rounded font-medium hover:bg-gray-800 transition-colors">
+          <Button>
             Become a Partner Today
-          </button>
+          </Button>
         </div>
       </section>
     </div>

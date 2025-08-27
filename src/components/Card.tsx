@@ -2,19 +2,14 @@ import React from 'react'
 
 interface CardProps {
   title: string
-  children: React.ReactNode
-  className?: string
+  caption: string
 }
 
-const Card: React.FC<CardProps> = ({ title, children, className = '' }) => {
-  return (
-    <div className={`bg-white rounded-lg shadow-lg p-8 ${className}`}>
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-        {title}
-      </h2>
-      {children}
-    </div>
-  )
-}
+const Card: React.FC<CardProps> = ({ title, caption }) => (
+  <div className="bg-white rounded p-3 sm:p-6 h-80 sm:h-[400px] w-full flex flex-col justify-between">
+    <h3 className="text-left">{title}</h3>
+    <p className="text-left">{caption}</p>
+  </div>
+)
 
 export default Card 
