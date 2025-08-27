@@ -2,7 +2,6 @@ import Hero from './components/Hero'
 import Container from './components/Container'
 import SplitSection from './components/SplitSection'
 import Card from './components/Card'
-import Button from './components/Button'
 import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
 
