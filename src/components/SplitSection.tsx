@@ -5,16 +5,31 @@ interface SplitSectionProps {
   eyebrow: string
   headline: string
   body: string
+  desktopImage?: string
+  mobileImage?: string
 }
 
 const SplitSection: React.FC<SplitSectionProps> = ({ 
   variant = 'imageLeft', 
   eyebrow, 
   headline, 
-  body 
+  body,
+  desktopImage = '/assets/placeholder/image-desktop.png',
+  mobileImage = '/assets/placeholder/image-mobile.png'
 }) => {
   const ImageBlock = () => (
-    <div className="w-full max-w-[400px] aspect-[3/4] sm:aspect-[4/5] bg-[#DCEEFF] rounded-sm mx-auto" />
+    <div className="w-full max-w-[400px] mx-auto">
+      <img 
+        src={desktopImage}
+        alt=""
+        className="hidden sm:block w-full aspect-square rounded-sm"
+      />
+      <img 
+        src={mobileImage}
+        alt=""
+        className="block sm:hidden w-full aspect-[600/760] rounded-sm"
+      />
+    </div>
   )
 
   const TextBlock = () => (

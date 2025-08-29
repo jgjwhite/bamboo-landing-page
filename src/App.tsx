@@ -45,8 +45,7 @@ function App() {
           variant="imageLeft"
           eyebrow=""
           headline="Unlock new revenue"
-          body="Generate new revenue by fulfilling Bamboo brands within your exi
-sting operations."
+          body="Generate new revenue by fulfilling Bamboo brands within your existing operations."
         />
       </Container>
       
