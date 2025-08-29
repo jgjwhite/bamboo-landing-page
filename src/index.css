@@ -12,15 +12,57 @@
   }
   
   h1 {
-    @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight;
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+  }
+  
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 48px;
+    }
   }
   
   h2 {
-    @apply text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight;
+    font-size: 21px;
+    line-height: 110%;
+    font-weight: 600;
+  }
+  
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 36px;
+    }
   }
   
   h3 {
-    @apply text-xl sm:text-2xl font-semibold leading-tight;
+    font-size: 17px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 640px) {
+    h3 {
+      font-size: 21px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    h3 {
+      font-size: 21px;
+    }
   }
   
   p {
@@ -48,12 +90,25 @@
   .container-padding {
     @apply px-4 sm:px-6 lg:px-8;
   }
+  
+  .headline-pairing {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .headline-pairing {
+      gap: 16px;
+    }
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
   
   .bg-pattern {
     background-image: radial-gradient(circle at 1px 1px, #e5e5e5 1px, transparent 0);

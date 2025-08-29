@@ -10,15 +10,12 @@ function App() {
     <div className="min-h-screen bg-[#fafafa]">
       <Hero />
       <Container>
-        <div className="max-w-[640px] mx-auto text-center">
+        <div className="headline-pairing">
           <h2>
             Why partner with Bamboo?
           </h2>
           <p>
-            Partnering with Bamboo means unlocking a new revenue stream without
-adding overhead. You fulfill delivery-first QSR brands created by Bamboo, while
-our PartnerPay™ model guarantees profit on every item, giving you clarity and co
-nfidence with every order.
+            Partnering with Bamboo means unlocking a new revenue stream without adding overhead. You fulfill delivery-first QSR brands created by Bamboo, while our PartnerPay™ model guarantees profit on every item, giving you clarity and confidence with every order.
     
           </p>
         </div>
@@ -52,22 +49,40 @@ sting operations."
         />
       </Container>
       
-    
+      <Container>
+        <div className="bg-white rounded-xl p-3 sm:p-6">
+          <div className="headline-pairing">
+            <h2>
+              Trusted by operators nationwide
+            </h2>
+            <p>
+              Bamboo is already operating at scale, with a growing network of operators and a portfolio of delivery-first QSR brands built for national growth. Every brand is designed for scalable success, and every operator fulfills with confidence through PartnerPay™.
+            </p>
+          </div>
+          
+          <div className="mt-8">
+            <img 
+              src="/assets/operator-map.png" 
+              alt="Operator map showing Bamboo's nationwide presence"
+              className="w-full max-w-[460px] h-auto mx-auto"
+            />
+          </div>
+        </div>
+      </Container>
       
       <Container>
-        <div className="max-w-[640px] mx-auto text-center">
+        <div className="headline-pairing">
           <h2>
-            How PartnerPay™ works
+            How it works
           </h2>
           <p>
-            PartnerPay™ is our transparent pricing model that guarantees you earn
-on every item, every time. Here's how it works:
+          Onboarding typically takes about 2 weeks. Once your location is set up and your team is prepared, you can request activation and Bamboo will launch your location within 24 to 48 hours.
           </p>
         </div>
       </Container>
       
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <Card 
             title="Create your account"
             caption="Start onboarding in minutes."
@@ -80,11 +95,15 @@ on every item, every time. Here's how it works:
             title="Confirm PartnerPay™ earnings"
             caption="Know your guaranteed profit upfront."
           />
+          <Card 
+            title="Fulfill orders with Bamboo app"
+            caption="Receive and manage orders seamlessly with the Bamboo tablet."
+          />
         </div>
       </Container>
       
       <Container>
-        <div className="max-w-[640px] mx-auto text-center">
+        <div className="headline-pairing">
           <h2>
             Frequently Asked Questions
           </h2>
