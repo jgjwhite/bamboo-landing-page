@@ -4,12 +4,13 @@ import SplitSection from './components/SplitSection'
 import Card from './components/Card'
 import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
+import Button from './components/Button'
 
 function App() {
   return (
     <div className="min-h-screen bg-[#fafafa]">
       <Hero />
-      <Container>
+      <Container pt="16" pb="8">
         <div className="headline-pairing">
           <h2>
             Why partner with Bamboo?
@@ -50,7 +51,7 @@ sting operations."
       </Container>
       
       <Container>
-        <div className="bg-white rounded-xl p-3 sm:p-6">
+        <div className="bg-white rounded-xl py-8 px-3 sm:py-12 sm:px-6 lg:py-16">
           <div className="headline-pairing">
             <h2>
               Trusted by operators nationwide
@@ -66,6 +67,12 @@ sting operations."
               alt="Operator map showing Bamboo's nationwide presence"
               className="w-full max-w-[460px] h-auto mx-auto"
             />
+          </div>
+          
+          <div className="mt-8">
+            <p className="font-medium max-w-[640px] mx-auto text-center">
+              With Bamboo, operators across the country are helping build the next generation of QSRs.
+            </p>
           </div>
         </div>
       </Container>
@@ -102,6 +109,50 @@ sting operations."
         </div>
       </Container>
       
+      <Container pt="16" pb="8">
+        <div className="headline-pairing mb-12">
+          <h2>
+            Reshaping franchising for the digital era
+          </h2>
+        </div>
+      </Container>
+      
+      <Container pt="0">
+          <SplitSection 
+            variant="imageLeft"
+            eyebrow=""
+            headline="Shifting landscape"
+            body="The restaurant landscape is changing quickly. By 2030, most restaurants will fulfill more than their own brand as delivery continues to reshape customer behavior."
+          />
+      </Container>
+      
+      <Container>
+        <SplitSection 
+          variant="imageRight"
+          eyebrow=""
+          headline="New standards of quality"
+          body="This shift is already creating new standards of quality and scalable growth; with operating partners nationwide now part of the evolution of franchising."
+        />
+      </Container>
+      
+      <Container>
+        <SplitSection 
+          variant="imageLeft"
+          eyebrow=""
+          headline="Expanding reach"
+          body="Our delivery-first QSR brands are designed for consistency, quality, and national reach, and operating partners across the country are unlocking new revenue while participating in this transformation."
+        />
+      </Container>
+      
+      <Container>
+        <div className="text-center space-y-6 sm:space-y-8">
+          <p className="font-medium max-w-[640px] mx-auto text-center">
+            "Bamboo is building the next generation of QSRs and, with our operating partners, setting the standard for franchising in the digital era."
+          </p>
+          <Button>Become a partner today</Button>
+        </div>
+      </Container>
+      
       <Container>
         <div className="headline-pairing">
           <h2>
@@ -112,45 +163,61 @@ sting operations."
       
       <Container>
         <div className="max-w-[640px] mx-auto">
-          <FAQ sectionTitle="Earnings & PartnerPay™">
+          <FAQ sectionTitle="Earnings and PartnerPay™">
             <QuestionAnswer 
               question="How does PartnerPay™ work?" 
-              answer="PartnerPay™ is our transparent pricing model. You set your own price for each menu item, and Bamboo covers the gap between your price and the customer's order total. This ensures you always earn your full price, regardless of delivery fees, platform commissions, or customer discounts."
-            />
-            <QuestionAnswer 
-              question="How much can I earn with Bamboo?" 
-              answer="Earnings depend on your pricing strategy and order volume. Most operators see 15-25% profit margins on Bamboo orders, with some achieving even higher margins through strategic pricing."
+              answer="PartnerPay™ is Bamboo's pricing model that guarantees your profit on every item. Before you fulfill a brand, you'll see the PartnerPay™ earnings for each menu item, so you know exactly what you'll take home per order."
             />
             <QuestionAnswer 
               question="When do I get paid?" 
-              answer="Bamboo processes payments weekly, with funds typically hitting your account within 3-5 business days after the payment period closes."
+              answer="Operators are paid weekly via direct deposit. Reporting is available upon request so you always have visibility into your earnings."
             />
             <QuestionAnswer 
-              question="Are there any hidden fees?" 
-              answer="No. PartnerPay™ is completely transparent. You set your price, and that's exactly what you earn. Bamboo covers all delivery platform fees, commissions, and customer discounts."
+              question="Can PartnerPay™ rates change over time?" 
+              answer="Yes, rates may be updated periodically to keep pricing competitive in the market. If there's a change, you'll be notified by email before it takes effect."
             />
             <QuestionAnswer 
-              question="What if a customer cancels or there's an issue?" 
-              answer="Operators are paid for all completed orders. If there are customer issues, Bamboo handles customer service and works directly with delivery platforms to resolve them."
+              question="Do I have to pay Bamboo anything upfront?" 
+              answer="No. There are no upfront costs to partner with Bamboo. We invest in the brands, the technology, and the marketing, so operators focus entirely on fulfillment and guaranteed earnings."
+            />
+            <QuestionAnswer 
+              question="Do I cover food costs for Bamboo orders?" 
+              answer="Yes. PartnerPay™ is designed to factor in your food cost plus guaranteed profit, so every fulfilled order delivers a positive margin."
+            />
+            <QuestionAnswer 
+              question="Is my PartnerPay™ profit guaranteed even if food costs rise?" 
+              answer="PartnerPay™ guarantees your profit per item based on current food costs. If your ingredient costs increase significantly, you can request a price change, and PartnerPay™ will be updated accordingly. Bamboo also reviews market conditions and may adjust rates proactively. You'll be notified by email if your PartnerPay™ earnings change, whether higher or lower."
+            />
+            <QuestionAnswer 
+              question="How do taxes work on PartnerPay™ earnings?" 
+              answer="Sales tax on Bamboo orders is handled under Marketplace Facilitator Tax rules, so you are not responsible for collecting or remitting it. PartnerPay™ earnings are recorded as business income for your restaurant, and payout reports are available upon request to support your bookkeeping and tax filings."
+            />
+            <QuestionAnswer 
+              question="What if orders are slow?" 
+              answer="Order volume varies by location and brand. While PartnerPay™ guarantees your profit per item, demand is influenced by your market. You can add or remove brands at any time, and many operators expand into multiple Bamboo brands to drive more volume."
+            />
+            <QuestionAnswer 
+              question="Why is PartnerPay™ better than revenue share?" 
+              answer="Revenue share puts the burden on operators to set prices high enough to cover margin, but those inflated prices often limit demand. PartnerPay™ keeps pricing competitive to drive orders, while guaranteeing your profit per item upfront. The result is steady, predictable earnings, built for growth."
             />
           </FAQ>
           
           <FAQ sectionTitle="Operations">
             <QuestionAnswer 
-              question="How do orders come through?" 
-              answer="Orders arrive directly in the Bamboo app on your tablet and print to your kitchen using a connected printer. Each ticket includes ingredients, portions, and preparation instructions."
+              question="Do I need more staff to run Bamboo brands?" 
+              answer="No. Bamboo is designed to fit into your existing operations. Most operators use their current staff and scale as demand grows and there is no need to hire additional staff upfront."
             />
             <QuestionAnswer 
-              question="What if I can't fulfill an order?" 
-              answer="You have full control to pause orders at any time directly from the Bamboo app. This ensures you can manage fulfillment without impacting your core operations."
+              question="Will this slow down my own restaurant operations?" 
+              answer="No. Bamboo brands are built to run alongside your existing business. Orders flow through the Bamboo app and fit within your current workflow, so they complement your operations."
             />
             <QuestionAnswer 
-              question="How do staff know what to prepare?" 
-              answer="Each order ticket includes detailed ingredients, portions, and preparation notes. Your team follows these guidelines to ensure consistency with brand standards."
+              question="Do I need special training?" 
+              answer="No. Bamboo provides clear brand guidelines, portion guides, and final menus so your team can be prepared quickly. Each ticket prints ingredients and portions, so your staff knows exactly what to prepare."
             />
             <QuestionAnswer 
-              question="What if something goes wrong during fulfillment?" 
-              answer="Operators are paid for all completed orders, and Bamboo handles customer service and works directly with delivery platforms to resolve any issues."
+              question="Can I pause or limit Bamboo orders if I need to?" 
+              answer="Yes. Operators have full control to pause orders at any time directly in the Bamboo app. Orders are set to auto-accept so fulfillment is seamless, but you can pause if needed."
             />
           </FAQ>
           
@@ -192,7 +259,7 @@ sting operations."
             />
             <QuestionAnswer 
               question="When do I go live?" 
-              answer="Once your location is set up, menus are finalized, and your team is prepared, you can request activation. Bamboo will activate you within 24–48 hours of your request."
+              answer="Once your location is set up, menus are finalized, and your team is prepared, you can request activation. Bamboo will activate you within 24 to 48 hours of your request."
             />
           </FAQ>
           
@@ -211,7 +278,7 @@ sting operations."
             />
             <QuestionAnswer 
               question="How often are new brands added?" 
-              answer="Bamboo is always evolving its portfolio. We design and launch delivery-first QSR brands with scale, demand, and quality in mind and only keep brands that meet those standards. As new brands are introduced, you'll have the option to add them if they're a fit for your location."
+              answer="Bamboo is always evolving its portfolio. We design and launch delivery-first QSR brands with scale, demand, and quality in mind. We only keep brands that meet those standards. As new brands are introduced, you'll have the option to add them if they're a fit for your location."
             />
             <QuestionAnswer 
               question="Do I have to take on every Bamboo brand offered?" 
@@ -223,7 +290,7 @@ sting operations."
             />
           </FAQ>
           
-          <FAQ sectionTitle="Support">
+          <FAQ sectionTitle="Support and partnership">
             <QuestionAnswer 
               question="What kind of support does Bamboo provide?" 
               answer="Bamboo provides centralized support for all operators. Instead of a single point of contact, your requests are routed to the right Bamboo support team member, ensuring issues are handled quickly and consistently."
@@ -246,7 +313,7 @@ sting operations."
             />
           </FAQ>
           
-          <FAQ sectionTitle="Technology and operations">
+          <FAQ sectionTitle="Technology">
             <QuestionAnswer 
               question="What is the Bamboo tablet and app used for?" 
               answer="The Bamboo tablet comes preloaded with the Bamboo app, which is how you receive and manage orders. Each order ticket includes the ingredients and portions, so your staff knows exactly what to fulfill."
@@ -270,6 +337,28 @@ sting operations."
             <QuestionAnswer 
               question="Do I need to download or manage anything else?" 
               answer="No. The Bamboo tablet comes fully set up with the app and includes the printer app needed to connect your existing printer. There's nothing additional to download or manage."
+            />
+          </FAQ>
+          
+          <FAQ sectionTitle="Commitment">
+            <QuestionAnswer 
+              question="Do I have to sign a contract to partner with Bamboo?" 
+              answer="No. There are no binding contracts to review or sign, and you can stop fulfilling at any time. Operators do agree to Bamboo's performance standards during onboarding, but there's no long-term contract. If you leave Bamboo, you'll return the tablet using a prepaid return label provided by us."
+            />
+          </FAQ>
+          
+          <FAQ sectionTitle="Performance standards">
+            <QuestionAnswer 
+              question="What standards are operators expected to maintain?" 
+              answer="Operators are expected to maintain key benchmarks such as order accuracy, low cancellation rates, minimal downtime, and consistent fulfillment times. These standards ensure customers have a great experience with Bamboo brands and protect the reputation of every operator in the network."
+            />
+            <QuestionAnswer 
+              question="Why does Bamboo enforce performance standards?" 
+              answer="Bamboo brands are designed for national scale, and consistency is critical. By maintaining high standards, we ensure every customer has the same quality experience: building loyalty, repeat orders, and long-term growth for all operators."
+            />
+            <QuestionAnswer 
+              question="What happens if my performance falls below standards?" 
+              answer="If your location falls below benchmarks, Bamboo will notify you and provide support to help you get back on track. If issues continue, locations may be removed from Bamboo to protect brand quality and customer trust."
             />
           </FAQ>
         </div>
