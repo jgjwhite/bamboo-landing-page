@@ -14,7 +14,7 @@ const FAQ: React.FC<FAQProps> = ({ sectionTitle, children }) => {
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full flex justify-between items-center py-6 sm:py-8 text-left"
       >
-        <h3>{sectionTitle}</h3>
+        <h4>{sectionTitle}</h4>
         <div className={`w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`} />
       </button>
       

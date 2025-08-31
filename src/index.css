@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-color: #464646;
+}
+
 @layer base {
   html {
     font-family: system-ui, sans-serif;
@@ -30,7 +34,7 @@
   }
   
   h2 {
-    font-size: 21px;
+    font-size: 24px;
     line-height: 110%;
     font-weight: 600;
   }
@@ -43,14 +47,14 @@
   
   @media (min-width: 1024px) {
     h2 {
-      font-size: 36px;
+      font-size: 40px;
     }
   }
   
   h3 {
-    font-size: 17px;
+    font-size: 21px;
     line-height: 120%;
-    font-weight: 500;
+    font-weight: 600;
   }
   
   @media (min-width: 640px) {
@@ -61,12 +65,31 @@
   
   @media (min-width: 1024px) {
     h3 {
+      font-size: 32px;
+    }
+  }
+  
+  h4 {
+    font-size: 17px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 640px) {
+    h4 {
+      font-size: 21px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    h4 {
       font-size: 21px;
     }
   }
   
   p {
     @apply text-base sm:text-lg leading-relaxed;
+    color: var(--text-color);
   }
 }
 
@@ -76,7 +99,7 @@
   }
   
   .btn-secondary {
-    @apply bg-white text-black border-2 border-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200;
+    @apply bg-white text-black border-2 border-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-shadow duration-200;
   }
   
   .card {
@@ -108,10 +131,9 @@
 }
 
 @layer utilities {
-
-  
   .bg-pattern {
     background-image: radial-gradient(circle at 1px 1px, #e5e5e5 1px, transparent 0);
     background-size: 20px 20px;
   }
 } 
+

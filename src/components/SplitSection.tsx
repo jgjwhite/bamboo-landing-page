@@ -18,11 +18,10 @@ const SplitSection: React.FC<SplitSectionProps> = ({
   mobileImage = '/assets/placeholder/image-mobile.png'
 }) => {
   const ImageBlock = () => (
-    <div className="w-full max-w-[400px] mx-auto">
-      <img 
-        src={desktopImage}
-        alt=""
-        className="hidden sm:block w-full aspect-square rounded-sm"
+    <div className="w-full h-full">
+      <div 
+        className="hidden sm:block w-full min-h-[500px] bg-cover bg-center bg-no-repeat rounded-sm"
+        style={{ backgroundImage: `url(${desktopImage})` }}
       />
       <img 
         src={mobileImage}

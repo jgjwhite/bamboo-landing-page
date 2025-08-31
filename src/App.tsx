@@ -25,6 +25,8 @@ function App() {
       <Container>
         <SplitSection 
           variant="imageLeft"
+          desktopImage="/assets/why-01-desktop.png"
+          mobileImage="/assets/why-01-mobile.png"
           eyebrow=""
           headline="Delivery-First Brands"
           body="Brands created and optimized by Bamboo for scalable growth."
@@ -34,6 +36,8 @@ function App() {
       <Container>
         <SplitSection 
           variant="imageRight"
+          desktopImage="/assets/why-02-desktop.png"
+          mobileImage="/assets/why-02-mobile.png"
           eyebrow=""
           headline="Profit guaranteed"
           body="PartnerPay™ ensures you earn on every item, every time."
@@ -43,6 +47,8 @@ function App() {
       <Container>
         <SplitSection 
           variant="imageLeft"
+          desktopImage="/assets/why-03-desktop.png"
+          mobileImage="/assets/why-03-mobile.png"
           eyebrow=""
           headline="Unlock new revenue"
           body="Generate new revenue by fulfilling Bamboo brands within your existing operations."
