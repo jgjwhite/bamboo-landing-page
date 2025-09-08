@@ -5,7 +5,6 @@ import Card from './components/Card'
 import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
 import Button from './components/Button'
-import SplitSection from './components/SplitSection'
 
 function App() {
   return (
