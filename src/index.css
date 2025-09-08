@@ -4,7 +4,23 @@
 
 :root {
   --text-color: #464646;
+  --bg-color: #F1ECE4;
 }
+
+
+
+/* Add your custom font face declarations */
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('/fonts/PPRightGrotesk-TightMedium.woff2') format('woff2'),
+       url('/fonts/PPRightGrotesk-TightMedium.woff2') format('woff');
+  font-weight: 470;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
+}
+
+
+
 
 @layer base {
   html {
@@ -12,63 +28,88 @@
   }
   
   body {
-    @apply bg-[#fafafa] text-black;
+    background-color: var(--bg-color);
+    @apply text-black;
   }
   
   h1 {
-    font-size: 24px;
-    line-height: 110%;
-    font-weight: 600;
+    font-family: 'PP Right Grotesk', system-ui, sans-serif;
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 470;
   }
   
   @media (min-width: 768px) {
     h1 {
-      font-size: 36px;
+      font-size: 72px;
+      line-height: 72px;
     }
   }
   
   @media (min-width: 1024px) {
     h1 {
-      font-size: 48px;
+      font-size: 86px;
+      line-height: 84px;
     }
   }
   
+
+
+
   h2 {
-    font-size: 24px;
-    line-height: 110%;
-    font-weight: 600;
+    font-family: 'PP Right Grotesk', system-ui, sans-serif;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 470;
+    letter-spacing: 0.5px;
   }
   
   @media (min-width: 768px) {
     h2 {
-      font-size: 24px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: 0.5px;
     }
   }
   
   @media (min-width: 1024px) {
     h2 {
-      font-size: 40px;
+      font-size: 64px;
+      line-height: 70px;
+      letter-spacing: 0.5px;
     }
   }
   
+
+
+
   h3 {
-    font-size: 21px;
-    line-height: 120%;
-    font-weight: 600;
+    font-family: 'PP Right Grotesk', system-ui, sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 470;
   }
   
   @media (min-width: 640px) {
     h3 {
-      font-size: 21px;
+      font-size: 40px;
+      line-height: 44px;
+      font-weight: 470;
     }
   }
   
   @media (min-width: 1024px) {
     h3 {
-      font-size: 32px;
+      font-size: 44px;
+      line-height: 48px;
+      font-weight: 470;
     }
   }
   
+
+
+
+
   h4 {
     font-size: 17px;
     line-height: 120%;
@@ -87,10 +128,37 @@
     }
   }
   
+
+
+
+
   p {
-    @apply text-base sm:text-lg leading-relaxed;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400; 
     color: var(--text-color);
   }
+
+  @media (min-width: 640px) {
+    p {
+      font-size: 17px;
+      line-height: 26px;
+      font-weight: 400; 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    p {
+      font-size: 18px; 
+      line-height: 26px;
+      font-weight: 400; 
+    }
+  }
+
+
+
+
+
 }
 
 @layer components {

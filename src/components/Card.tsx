@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
     }`}
     style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}}
   >
-    <h4 className={`text-left ${textColor === 'white' ? 'text-white' : 'text-black'}`}>{title}</h4>
+    <h3 className={`text-left ${textColor === 'white' ? 'text-white' : 'text-black'}`}>{title}</h3>
     <p className={`text-left ${textColor === 'white' ? 'text-white' : 'text-black'}`}>{caption}</p>
   </div>
 )

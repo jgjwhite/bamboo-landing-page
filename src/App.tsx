@@ -8,7 +8,7 @@ import Button from './components/Button'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#fafafa]">
+    <div className="min-h-screen">
       <Hero />
       <Container pt="16" pb="8">
         <div className="headline-pairing">
