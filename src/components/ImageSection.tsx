@@ -18,7 +18,7 @@ const ImageSection: React.FC<ImageSectionProps> = ({
   className = ''
 }) => {
   const aspectRatio = variant === 'full-width' 
-    ? "aspect-[900/1200] sm:aspect-[5/4]" 
+    ? "aspect-[900/1200] sm:aspect-[5/3]" 
     : "aspect-[900/1200] sm:aspect-square"
   
   return (

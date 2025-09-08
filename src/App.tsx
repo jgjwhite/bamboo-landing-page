@@ -62,7 +62,7 @@ function App() {
             </p>
           </div>
           
-          <div className="mt-8">
+          <div>
             <img 
               src="/assets/images/operator-map.webp" 
               alt="Operator map showing Bamboo's nationwide presence"
@@ -70,7 +70,7 @@ function App() {
             />
           </div>
           
-          <div className="mt-8">
+          <div>
             <p className="max-w-[640px] mx-auto text-center">
               With Bamboo, operators across the country are helping build the next generation of QSRs.
             </p>

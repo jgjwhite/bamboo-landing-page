@@ -44,6 +44,41 @@ const Hero: React.FC = () => {
           <Button>
             Become a Partner Today
           </Button>
+
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-12 mt-6">
+            <div className="flex items-center gap-3">
+              <img 
+                src="/assets/icons/Check.svg" 
+                alt="Check" 
+                className="w-4 h-4"
+              />
+              <p className="text-white">National footprint</p>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              <img 
+                src="/assets/icons/Check.svg" 
+                alt="Check" 
+                className="w-4 h-4"
+              />
+              <p className="text-white">Profit guaranteed</p>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              <img 
+                src="/assets/icons/Check.svg" 
+                alt="Check" 
+                className="w-4 h-4"
+              />
+              <p className="text-white">Unlock new revenue</p>
+            </div>
+          </div>
+
+
+
+
+
         </div>
       </section>
     </div>

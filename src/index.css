@@ -12,6 +12,7 @@
   --blue-100: #CBD9FE;
   --cream-50: #FCF8F5;
   --sand-200: #ebe1d2;
+  --terracotta: #D36432;
   
   /* Semantic Colors */
   --primary-bg: var(--green-600);
@@ -189,8 +190,8 @@
   }
   
   .btn-smooth:hover {
-    background-color: var(--primary-hover-bg);
-    color: var(--primary-hover-text);
+    background-color: var(--terracotta);
+    color: var(--primary-text);
   }
   
   /* Inverted button variant */
@@ -201,7 +202,7 @@
   }
   
   .btn-inverted:hover {
-    background-color: var(--primary-bg);
+    background-color: var(--terracotta);
     color: var(--primary-text);
   }
   
