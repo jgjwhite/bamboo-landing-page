@@ -5,6 +5,19 @@
 :root {
   --text-color: #464646;
   --bg-color: #F1ECE4;
+  
+  /* Primitive Colors */
+  --green-600: #0B6B45;
+  --green-800: #074325;
+  --blue-100: #CBD9FE;
+  --cream-50: #FCF8F5;
+  --sand-200: #ebe1d2;
+  
+  /* Semantic Colors */
+  --primary-bg: var(--green-600);
+  --primary-text: var(--cream-50);
+  --primary-hover-bg: var(--blue-100);
+  --primary-hover-text: var(--green-800);
 }
 
 
@@ -18,7 +31,6 @@
   font-style: normal;
   font-display: swap; /* Improves loading performance */
 }
-
 
 
 
@@ -105,8 +117,8 @@
       font-weight: 470;
     }
   }
-  
-
+   
+ 
 
 
 
@@ -127,8 +139,8 @@
       font-size: 21px;
     }
   }
-  
-
+   
+ 
 
 
 
@@ -158,7 +170,6 @@
 
 
 
-
 }
 
 @layer components {
@@ -168,6 +179,30 @@
   
   .btn-secondary {
     @apply bg-white text-black border-2 border-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-shadow duration-200;
+  }
+  
+  /* Button with smooth color transitions */
+  .btn-smooth {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-smooth:hover {
+    background-color: var(--primary-hover-bg);
+    color: var(--primary-hover-text);
+  }
+  
+  /* Inverted button variant */
+  .btn-inverted {
+    background-color: var(--primary-hover-bg);
+    color: var(--primary-hover-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-inverted:hover {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
   }
   
   .card {
@@ -196,6 +231,14 @@
       gap: 16px;
     }
   }
+  
+  .cta-bg {
+    background-image: url('/assets/images/Bamboo-overlay.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--green-600);
+  }
 }
 
 @layer utilities {
@@ -203,5 +246,4 @@
     background-image: radial-gradient(circle at 1px 1px, #e5e5e5 1px, transparent 0);
     background-size: 20px 20px;
   }
-} 
-
+}

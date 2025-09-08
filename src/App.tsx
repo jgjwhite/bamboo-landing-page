@@ -1,10 +1,11 @@
 import Hero from './components/Hero'
 import Container from './components/Container'
-import SplitSection from './components/SplitSection'
+import ImageSection from './components/ImageSection'
 import Card from './components/Card'
 import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
 import Button from './components/Button'
+import SplitSection from './components/SplitSection'
 
 function App() {
   return (
@@ -22,41 +23,37 @@ function App() {
         </div>
       </Container>
       
-      <Container>
-        <SplitSection 
-          variant="imageLeft"
-          desktopImage="/assets/why-01-desktop.png"
-          mobileImage="/assets/why-01-mobile.png"
-          eyebrow=""
+      <Container className="pb-2">
+        <ImageSection 
+          variant="full-width"
+          desktopImage="/assets/images/why-01-desktop.webp"
+          mobileImage="/assets/images/why-01-mobile.webp"
           headline="Delivery-First Brands"
           body="Brands created and optimized by Bamboo for scalable growth."
         />
       </Container>
       
-      <Container>
-        <SplitSection 
-          variant="imageRight"
-          desktopImage="/assets/why-02-desktop.png"
-          mobileImage="/assets/why-02-mobile.png"
-          eyebrow=""
-          headline="Profit guaranteed"
-          body="PartnerPay™ ensures you earn on every item, every time."
-        />
+      <Container className="pt-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <ImageSection 
+            variant="split-width"
+            desktopImage="/assets/images/why-02-desktop.webp"
+            mobileImage="/assets/images/why-02-mobile.webp"
+            headline="Profit guaranteed"
+            body="PartnerPay™ ensures you earn on every item, every time."
+          />
+          <ImageSection 
+            variant="split-width"
+            desktopImage="/assets/images/why-003-desktop.webp"
+            mobileImage="/assets/images/why-003-mobile.webp"
+            headline="Unlock new revenue"
+            body="Generate new revenue by fulfilling Bamboo brands within your existing operations."
+          />
+        </div>
       </Container>
       
       <Container>
-        <SplitSection 
-          variant="imageLeft"
-          desktopImage="/assets/why-03-desktop.png"
-          mobileImage="/assets/why-03-mobile.png"
-          eyebrow=""
-          headline="Unlock new revenue"
-          body="Generate new revenue by fulfilling Bamboo brands within your existing operations."
-        />
-      </Container>
-      
-      <Container>
-        <div className="bg-white rounded-xl py-8 px-3 sm:py-12 sm:px-6 lg:py-16">
+        <div className="rounded-xl py-8 px-3 sm:py-12 sm:px-6 lg:py-16" style={{ backgroundColor: 'var(--sand-200)' }}>
           <div className="headline-pairing">
             <h2>
               Trusted by operators nationwide
@@ -68,51 +65,22 @@ function App() {
           
           <div className="mt-8">
             <img 
-              src="/assets/operator-map.png" 
+              src="/assets/images/operator-map.webp" 
               alt="Operator map showing Bamboo's nationwide presence"
               className="w-full max-w-[460px] h-auto mx-auto"
             />
           </div>
           
           <div className="mt-8">
-            <p className="font-medium max-w-[640px] mx-auto text-center">
+            <p className="max-w-[640px] mx-auto text-center">
               With Bamboo, operators across the country are helping build the next generation of QSRs.
             </p>
           </div>
         </div>
       </Container>
       
-      <Container>
-        <div className="headline-pairing">
-          <h2>
-            How it works
-          </h2>
-          <p>
-          Onboarding typically takes about 2 weeks. Once your location is set up and your team is prepared, you can request activation and Bamboo will launch your location within 24 to 48 hours.
-          </p>
-        </div>
-      </Container>
+
       
-      <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <Card 
-            title="Create your account"
-            caption="Start onboarding in minutes."
-          />
-          <Card 
-            title="Select brands"
-            caption="Choose the Bamboo brands that fit your location."
-          />
-          <Card 
-            title="Confirm PartnerPay™ earnings"
-            caption="Know your guaranteed profit upfront."
-          />
-          <Card 
-            title="Fulfill orders with Bamboo app"
-            caption="Receive and manage orders seamlessly with the Bamboo tablet."
-          />
-        </div>
-      </Container>
       
       <Container pt="16" pb="8">
         <div className="headline-pairing mb-12">
@@ -122,39 +90,82 @@ function App() {
         </div>
       </Container>
       
-      <Container pt="0">
-          <SplitSection 
-            variant="imageLeft"
-            eyebrow=""
-            headline="Shifting landscape"
-            body="The restaurant landscape is changing quickly. By 2030, most restaurants will fulfill more than their own brand as delivery continues to reshape customer behavior."
+      <Container className="pt-0 pb-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+          <ImageSection 
+          variant="split-width"
+          desktopImage="/assets/images/reshaping-01-desktop.webp"
+          mobileImage="/assets/images/reshaping-01-mobile.webp"
+          headline="Shifting landscape"
+          body="The restaurant landscape is changing quickly. By 2030, most restaurants will fulfill more than their own brand as delivery continues to reshape customer behavior."
           />
-      </Container>
-      
-      <Container>
-        <SplitSection 
-          variant="imageRight"
-          eyebrow=""
+          <ImageSection 
+          variant="split-width"
+          desktopImage="/assets/images/reshaping-02-desktop.webp"
+          mobileImage="/assets/images/reshaping-02-mobile.webp"
           headline="New standards of quality"
           body="This shift is already creating new standards of quality and scalable growth; with operating partners nationwide now part of the evolution of franchising."
-        />
+          />
+        </div>
       </Container>
       
-      <Container>
-        <SplitSection 
-          variant="imageLeft"
-          eyebrow=""
+
+      
+      <Container className="pt-3">
+
+        <ImageSection 
+          variant="full-width"
+          desktopImage="/assets/images/reshaping-03-desktop.webp"
+          mobileImage="/assets/images/reshaping-03-mobile.webp"
           headline="Expanding reach"
           body="Our delivery-first QSR brands are designed for consistency, quality, and national reach, and operating partners across the country are unlocking new revenue while participating in this transformation."
-        />
+          />
+        
       </Container>
       
+
+
+
+      <Container pt="16" pb="8">
+        <div className="headline-pairing mb-12">
+          <h2>
+            How it works
+          </h2>
+        </div>
+      </Container>
+      
+      <Container pt="1" pb="16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <Card 
+            title="1. Create your account"
+            caption="Start onboarding in minutes."
+          />
+          <Card 
+            title="2. Select brands"
+            caption="Choose the Bamboo brands that fit your location."
+          />
+          <Card 
+            title="3. Confirm PartnerPay™ earnings"
+            caption="Know your guaranteed profit upfront."
+          />
+          <Card 
+            title="4. Fulfill orders with Bamboo app"
+            caption="Receive and manage orders seamlessly with the Bamboo tablet."
+          />
+        </div>
+      </Container>
+
+
+
+
+
       <Container>
-        <div className="text-center space-y-6 sm:space-y-8">
-          <p className="font-medium max-w-[640px] mx-auto text-center">
-            "Bamboo is building the next generation of QSRs and, with our operating partners, setting the standard for franchising in the digital era."
-          </p>
-          <Button>Become a partner today</Button>
+        <div className="text-center space-y-6 sm:space-y-8 px-4 py-16 rounded-xl cta-bg">
+          <h2 className="font-medium mx-auto max-w-[860px] text-center text-white">
+            Bamboo is building the next generation of QSRs &amp; setting the standard for franchising in the digital era.
+          </h2>
+          <Button variant="inverted">Become a partner today</Button>
         </div>
       </Container>
       

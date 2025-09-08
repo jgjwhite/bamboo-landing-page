@@ -21,20 +21,23 @@ const Hero: React.FC = () => {
         {/* Logo */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-12 z-10">
           <img 
-            src="/assets/bamboo-logo.svg" 
+            src="/assets/images/bamboo-logo.svg" 
             alt="Bamboo Logo" 
             className="w-[156px] h-[52px]"
-            style={{ filter: 'brightness(0)' }}
+            style={{ 
+              filter: 'brightness(0) invert(1)',
+              mixBlendMode: 'difference'
+            }}
           />
         </div>
 
         {/* Content Block */}
         <div className="max-w-[800px] mx-auto text-center space-y-6 px-3 sm:px-0 relative z-10">
-          <h1 className="text-black">
+          <h1 className="text-white">
             The Next Generation of QSRs, Fulfilled by Trusted Partners
           </h1>
           
-          <p className="text-black">
+          <p className="text-white">
             Bamboo is the franchise system for the delivery era. We create national brands, and our operating partners fulfill them with PartnerPay™, guaranteeing earnings on every order.
           </p>
           
