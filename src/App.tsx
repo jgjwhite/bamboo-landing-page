@@ -6,7 +6,6 @@ import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
 import Button from './components/Button'
 import { useScrollAnimation } from './hooks/useScrollAnimation'
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 function App() {
   useScrollAnimation()
