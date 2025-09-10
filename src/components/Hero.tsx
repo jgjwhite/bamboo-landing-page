@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Hero: React.FC = () => {
   return (
-    <div className="px-[12px] sm:px-[24px] pt-[12px] sm:pt-[24px]">
+    <div className="px-[12px] sm:px-[24px] pt-[12px] sm:pt-[24px] mb-12">
       <section className="relative text-black pt-12 pb-12 flex items-center justify-center h-[760px] sm:min-h-[600px] lg:min-h-[700px] max-h-[700px] overflow-hidden">
         {/* Video Background */}
         <video 
@@ -33,20 +33,20 @@ const Hero: React.FC = () => {
 
         {/* Content Block */}
         <div className="max-w-[800px] mx-auto text-center space-y-6 px-3 sm:px-0 relative z-10">
-          <h1 className="text-white">
+          <h1 className="text-white animate-slide-up">
             The Next Generation of QSRs, Fulfilled by Trusted Partners
           </h1>
           
-          <p className="text-white">
+          <p className="text-white animate-slide-up-delay">
             Bamboo is the franchise system for the delivery era. We create national brands, and our operating partners fulfill them with PartnerPay™, guaranteeing earnings on every order.
           </p>
           
-          <Button>
+          <Button className="animate-slide-up-delay-2">
             Become a Partner Today
           </Button>
 
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-12 mt-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-12 mt-6 animate-slide-up-delay-2">
             <div className="flex items-center gap-3">
               <img 
                 src="/assets/icons/Check.svg" 

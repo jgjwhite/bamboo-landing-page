@@ -65,7 +65,7 @@
       line-height: 84px;
     }
   }
-  
+
 
 
 
@@ -92,7 +92,7 @@
       letter-spacing: 0.5px;
     }
   }
-  
+
 
 
 
@@ -119,8 +119,6 @@
     }
   }
    
- 
-
 
 
   h4 {
@@ -141,7 +139,6 @@
     }
   }
    
- 
 
 
 
@@ -190,8 +187,8 @@
   }
   
   .btn-smooth:hover {
-    background-color: var(--terracotta);
-    color: var(--primary-text);
+    background-color: var(--primary-hover-bg);
+    color: var(--primary-hover-text);
   }
   
   /* Inverted button variant */
@@ -202,7 +199,7 @@
   }
   
   .btn-inverted:hover {
-    background-color: var(--terracotta);
+    background-color: var(--primary-bg);
     color: var(--primary-text);
   }
   
@@ -246,5 +243,70 @@
   .bg-pattern {
     background-image: radial-gradient(circle at 1px 1px, #e5e5e5 1px, transparent 0);
     background-size: 20px 20px;
+  }
+  
+  .animate-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.4s ease-out forwards;
+  }
+  
+  .animate-slide-up-delay {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.5s ease-out 0.1s forwards;
+  }
+  
+  .animate-slide-up-delay-2 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.6s ease-out 0.2s forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+      filter: blur(10px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+  /* Scroll-triggered animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(10px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  
+  /* Slideout footer */
+  .main-content {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+  }
+  
+  .footer {
+    position: sticky;
+    bottom: 0;
+    height: 160px;
+    background-color: var(--green-600);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
   }
 }

@@ -5,41 +5,44 @@ import Card from './components/Card'
 import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
 import Button from './components/Button'
+import { useScrollAnimation } from './hooks/useScrollAnimation'
 
 function App() {
+  useScrollAnimation()
+
   return (
     <div className="min-h-screen">
-      <Hero />
-      <Container pt="16" pb="8">
-        <div className="headline-pairing">
-          <h2>
+      <main className="main-content">
+        <Hero />
+
+      <Container>
+        <div className="headline-pairing pb-12">
+          <h2 className="fade-in">
             Why partner with Bamboo?
           </h2>
-          <p>
+          <p className="fade-in">
             Partnering with Bamboo means unlocking a new revenue stream without adding overhead. You fulfill delivery-first QSR brands created by Bamboo, while our PartnerPay™ model guarantees profit on every item, giving you clarity and confidence with every order.
     
           </p>
         </div>
-      </Container>
-      
-      <Container className="pb-2">
+
         <ImageSection 
           variant="full-width"
           desktopImage="/assets/images/why-01-desktop.webp"
           mobileImage="/assets/images/why-01-mobile.webp"
           headline="Delivery-First Brands"
           body="Brands created and optimized by Bamboo for scalable growth."
+          className="fade-in"
         />
-      </Container>
-      
-      <Container className="pt-3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
           <ImageSection 
             variant="split-width"
             desktopImage="/assets/images/why-02-desktop.webp"
             mobileImage="/assets/images/why-02-mobile.webp"
             headline="Profit guaranteed"
             body="PartnerPay™ ensures you earn on every item, every time."
+            className="fade-in"
           />
           <ImageSection 
             variant="split-width"
@@ -47,31 +50,36 @@ function App() {
             mobileImage="/assets/images/why-003-mobile.webp"
             headline="Unlock new revenue"
             body="Generate new revenue by fulfilling Bamboo brands within your existing operations."
+            className="fade-in"
           />
         </div>
       </Container>
       
       <Container>
+
         <div className="rounded-xl py-8 px-3 sm:py-12 sm:px-6 lg:py-16" style={{ backgroundColor: 'var(--sand-200)' }}>
           <div className="headline-pairing">
-            <h2>
+            <h2 className="fade-in">
               Trusted by operators nationwide
             </h2>
-            <p>
+            <p className="fade-in">
               Bamboo is already operating at scale, with a growing network of operators and a portfolio of delivery-first QSR brands built for national growth. Every brand is designed for scalable success, and every operator fulfills with confidence through PartnerPay™.
             </p>
           </div>
           
           <div>
-            <img 
-              src="/assets/images/operator-map.webp" 
-              alt="Operator map showing Bamboo's nationwide presence"
-              className="w-full max-w-[460px] h-auto mx-auto"
-            />
+            <picture>
+              <source srcSet="/assets/images/operator-map/Operator-map.svg" type="image/svg+xml" />
+              <img 
+                src="/assets/images/operator-map/operator-map.webp" 
+                alt="Operator map showing Bamboo's nationwide presence"
+                className="w-full max-w-[460px] h-auto mx-auto fade-in"
+              />
+            </picture>
           </div>
           
           <div>
-            <p className="max-w-[640px] mx-auto text-center">
+            <p className="max-w-[640px] mx-auto text-center fade-in">
               With Bamboo, operators across the country are helping build the next generation of QSRs.
             </p>
           </div>
@@ -81,16 +89,14 @@ function App() {
 
       
       
-      <Container pt="16" pb="8">
-        <div className="headline-pairing mb-12">
-          <h2>
+      <Container>
+        <div className="headline-pairing pb-12">
+          <h2 className="fade-in">
             Reshaping franchising for the digital era
           </h2>
         </div>
-      </Container>
-      
-      <Container className="pt-0 pb-2">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
           <ImageSection 
           variant="split-width"
@@ -98,6 +104,7 @@ function App() {
           mobileImage="/assets/images/reshaping-01-mobile.webp"
           headline="Shifting landscape"
           body="The restaurant landscape is changing quickly. By 2030, most restaurants will fulfill more than their own brand as delivery continues to reshape customer behavior."
+          className="fade-in"
           />
           <ImageSection 
           variant="split-width"
@@ -105,20 +112,17 @@ function App() {
           mobileImage="/assets/images/reshaping-02-mobile.webp"
           headline="New standards of quality"
           body="This shift is already creating new standards of quality and scalable growth; with operating partners nationwide now part of the evolution of franchising."
+          className="fade-in"
           />
         </div>
-      </Container>
-      
 
-      
-      <Container className="pt-3">
-
-        <ImageSection 
+        <ImageSection
           variant="full-width"
           desktopImage="/assets/images/reshaping-03-desktop.webp"
           mobileImage="/assets/images/reshaping-03-mobile.webp"
           headline="Expanding reach"
-          body="Our delivery-first QSR brands are designed for consistency, quality, and national reach, and operating partners across the country are unlocking new revenue while participating in this transformation."
+          body="Our delivery-first QSR brands are designed for consistency, quality, and national reach, and operating partners across the country are unlocking new revenue while participating in this transformation." 
+          className="fade-in pt-6"
           />
         
       </Container>
@@ -126,16 +130,14 @@ function App() {
 
 
 
-      <Container pt="16" pb="8">
-        <div className="headline-pairing mb-12">
-          <h2>
+      <Container>
+        <div className="headline-pairing pb-12">
+          <h2 className="fade-in">
             How it works
           </h2>
         </div>
-      </Container>
-      
-      <Container pt="1" pb="16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 fade-in">
           <Card 
             title="1. Create your account"
             caption="Start onboarding in minutes."
@@ -161,22 +163,20 @@ function App() {
 
       <Container>
         <div className="text-center space-y-6 sm:space-y-8 px-4 py-16 rounded-xl cta-bg">
-          <h2 className="font-medium mx-auto max-w-[860px] text-center text-white">
+          <h2 className="font-medium mx-auto max-w-[860px] text-center text-white fade-in">
             Bamboo is building the next generation of QSRs &amp; setting the standard for franchising in the digital era.
           </h2>
-          <Button variant="inverted">Become a partner today</Button>
+          <Button variant="inverted" className="fade-in">Become a partner today</Button>
         </div>
       </Container>
       
-      <Container>
-        <div className="headline-pairing">
+      <Container className="mb-16">
+        <div className="headline-pairing pb-12">
           <h2>
             Frequently Asked Questions
           </h2>
         </div>
-      </Container>
-      
-      <Container>
+
         <div className="max-w-[640px] mx-auto">
           <FAQ sectionTitle="Earnings and PartnerPay™">
             <QuestionAnswer 
@@ -378,6 +378,25 @@ function App() {
           </FAQ>
         </div>
       </Container>
+      </main>
+      
+      <footer className="footer">
+        <div className="p-8 text-center">
+          
+            {/* Logo */}
+            <div>
+              <img 
+                src="/assets/images/bamboo-logo.svg" 
+                alt="Bamboo Logo" 
+                className="w-[156px] h-[52px]"
+                style={{ 
+                  filter: 'brightness(0) invert(1)',
+                }}
+              />
+            </div>
+        
+        </div>
+      </footer>
     </div>
   )
 }
