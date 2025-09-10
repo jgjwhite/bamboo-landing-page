@@ -6,9 +6,9 @@ interface QuestionAnswerProps {
 }
 
 const QuestionAnswer: React.FC<QuestionAnswerProps> = ({ question, answer }) => (
-  <div className="py-2 sm:py-3">
-    <p className="font-semibold mb-2 sm:mb-2">{question}</p>
-    <p>{answer}</p>
+  <div className="pb-6 sm:pb-8">
+    <p className="text-black mb-2 sm:mb-2">{question}</p>
+    <p className="text-black opacity-60">{answer}</p>
   </div>
 )
 

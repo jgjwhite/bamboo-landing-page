@@ -11,11 +11,11 @@ const Hero: React.FC = () => {
           muted 
           loop 
           playsInline
-          poster="/assets/hero-poster.png"
+          poster="/assets/hero-poster.webp"
           className="absolute inset-0 w-full h-full object-cover z-0"
         >
-          <source src="/assets/hero-video.webm" type="video/webm" />
-          <source src="/assets/hero-video-optimized.mp4" type="video/mp4" />
+          <source src="/assets/hero-video-2.webm" type="video/webm" />
+          <source src="/assets/hero-video-2.mp4" type="video/mp4" />
         </video>
 
         {/* Logo */}

@@ -9,7 +9,7 @@ const FAQ: React.FC<FAQProps> = ({ sectionTitle, children }) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <div className="border-b border-black border-opacity-10">
+    <div className="rounded-lg overflow-hidden bg-[var(--sand-200)] hover:bg-[var(--sand-300)] px-6">
       <button 
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full flex justify-between items-center py-6 sm:py-8 text-left"
@@ -19,7 +19,7 @@ const FAQ: React.FC<FAQProps> = ({ sectionTitle, children }) => {
       </button>
       
       {isExpanded && (
-        <div className="pt-2 pb-8">
+        <div className="pt-2">
           {children}
         </div>
       )}

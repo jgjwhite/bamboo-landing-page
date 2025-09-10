@@ -12,6 +12,7 @@
   --blue-100: #CBD9FE;
   --cream-50: #FCF8F5;
   --sand-200: #ebe1d2;
+  --sand-300: #E2D5C0;
   --terracotta: #D36432;
   
   /* Semantic Colors */
@@ -122,20 +123,23 @@
 
 
   h4 {
-    font-size: 17px;
-    line-height: 120%;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 500;
   }
   
   @media (min-width: 640px) {
     h4 {
-      font-size: 21px;
+      font-size: 17px;
+      line-height: 26px;
     }
   }
   
   @media (min-width: 1024px) {
     h4 {
-      font-size: 21px;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 500;
     }
   }
    
@@ -165,7 +169,14 @@
     }
   }
 
-
+  .caption {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+  }
 
 
 }
@@ -183,7 +194,7 @@
   .btn-smooth {
     background-color: var(--primary-bg);
     color: var(--primary-text);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
   
   .btn-smooth:hover {
@@ -195,11 +206,11 @@
   .btn-inverted {
     background-color: var(--primary-hover-bg);
     color: var(--primary-hover-text);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
   }
   
   .btn-inverted:hover {
-    background-color: var(--primary-bg);
+    background-color: var(--terracotta);
     color: var(--primary-text);
   }
   
@@ -298,15 +309,28 @@
     background-color: var(--bg-color);
   }
   
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .footer {
     position: sticky;
     bottom: 0;
     height: 160px;
-    background-color: var(--green-600);
-    color: white;
+    background: linear-gradient(-45deg, #0A8554, #04361D);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
     display: flex;
-    justify-content: center;
     align-items: center;
     z-index: 1;
   }
+  
 }

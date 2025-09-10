@@ -6,6 +6,7 @@ import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
 import Button from './components/Button'
 import { useScrollAnimation } from './hooks/useScrollAnimation'
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 function App() {
   useScrollAnimation()
@@ -177,7 +178,7 @@ function App() {
           </h2>
         </div>
 
-        <div className="max-w-[640px] mx-auto">
+        <div className="max-w-[640px] mx-auto flex flex-col gap-2">
           <FAQ sectionTitle="Earnings and PartnerPay™">
             <QuestionAnswer 
               question="How does PartnerPay™ work?" 
@@ -381,8 +382,17 @@ function App() {
       </main>
       
       <footer className="footer">
-        <div className="p-8 text-center">
-          
+        <div className="w-full max-w-[1200px] mx-auto px-3 sm:px-6">
+          <div className="flex items-center justify-between">
+            {/* Contact Link */}
+            <a 
+              href="mailto:contact@bambookitchens.io" 
+              className="flex items-center gap-3"
+            >
+              {/* <EnvelopeIcon className="w-4 h-4" /> */}
+              <p className="text-white caption opacity-70 hover:opacity-100 transition-opacity">Contact Bamboo</p>
+            </a>
+
             {/* Logo */}
             <div>
               <img 
@@ -394,7 +404,16 @@ function App() {
                 }}
               />
             </div>
-        
+
+            {/* Book a Call Link */}
+            <a 
+              href="https://calendly.com/bambookitchens" 
+              className="flex items-center gap-3 "
+            >
+              {/* <PhoneIcon className="w-4 h-4 text-white opacity-70" /> */}
+              <p className="caption text-white opacity-70 hover:opacity-100 transition-opacity">Book a Call</p>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
