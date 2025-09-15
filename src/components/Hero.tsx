@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Content Block */}
-        <div className="max-w-[800px] mx-auto text-center space-y-6 px-3 sm:px-0 relative z-10">
+        <div className="max-w-[800px] mx-auto text-center space-y-6 px-3 sm:px-0  mt-12 sm:mt-0 relative z-10">
           <h1 className="text-white animate-slide-up">
             The Next Generation of QSRs, Fulfilled by Trusted Partners
           </h1>
