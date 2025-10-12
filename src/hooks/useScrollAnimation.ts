@@ -20,3 +20,5 @@ export const useScrollAnimation = () => {
     return () => observer.disconnect();
   }, []);
 }
+
+

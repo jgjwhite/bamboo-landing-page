@@ -185,11 +185,11 @@ function App() {
             />
             <QuestionAnswer 
               question="When do I get paid?" 
-              answer="Operators are paid weekly via direct deposit. Reporting is available upon request so you always have visibility into your earnings."
+              answer="Operators are paid weekly via direct deposit."
             />
             <QuestionAnswer 
               question="Can PartnerPay™ rates change over time?" 
-              answer="Yes, rates may be updated periodically to keep pricing competitive in the market. If there's a change, you'll be notified by email before it takes effect."
+              answer=" Yes. Rates may be updated periodically to keep pricing competitive and demand strong. You’ll always be notified before any change takes effect."
             />
             <QuestionAnswer 
               question="Do I have to pay Bamboo anything upfront?" 
@@ -197,183 +197,200 @@ function App() {
             />
             <QuestionAnswer 
               question="Do I cover food costs for Bamboo orders?" 
-              answer="Yes. PartnerPay™ is designed to factor in your food cost plus guaranteed profit, so every fulfilled order delivers a positive margin."
+              answer="Yes. PartnerPay™ factors in your food cost plus guaranteed profit, so every order delivers a positive margin."
             />
-            <QuestionAnswer 
+            {/* <QuestionAnswer 
               question="Is my PartnerPay™ profit guaranteed even if food costs rise?" 
               answer="PartnerPay™ guarantees your profit per item based on current food costs. If your ingredient costs increase significantly, you can request a price change, and PartnerPay™ will be updated accordingly. Bamboo also reviews market conditions and may adjust rates proactively. You'll be notified by email if your PartnerPay™ earnings change, whether higher or lower."
-            />
-            <QuestionAnswer 
+            /> */}
+            {/* <QuestionAnswer 
               question="How do taxes work on PartnerPay™ earnings?" 
               answer="Sales tax on Bamboo orders is handled under Marketplace Facilitator Tax rules, so you are not responsible for collecting or remitting it. PartnerPay™ earnings are recorded as business income for your restaurant, and payout reports are available upon request to support your bookkeeping and tax filings."
-            />
+            /> */}
             <QuestionAnswer 
               question="What if orders are slow?" 
-              answer="Order volume varies by location and brand. While PartnerPay™ guarantees your profit per item, demand is influenced by your market. You can add or remove brands at any time, and many operators expand into multiple Bamboo brands to drive more volume."
+              answer="Order volume varies by market. PartnerPay™ ensures every order is profitable, and you can add or remove brands to grow revenue over time."
             />
             <QuestionAnswer 
               question="Why is PartnerPay™ better than revenue share?" 
-              answer="Revenue share puts the burden on operators to set prices high enough to cover margin, but those inflated prices often limit demand. PartnerPay™ keeps pricing competitive to drive orders, while guaranteeing your profit per item upfront. The result is steady, predictable earnings, built for growth."
+              answer="Revenue share leaves operators guessing: profits fluctuate, marketing is often deducted before you get paid, and higher menu prices set to protect margin can limit demand. PartnerPay™ eliminates that uncertainty with guaranteed profit per item and competitive pricing that drives orders. The result is predictable, steady earnings with no hidden costs."
             />
           </FAQ>
           
+
+
+
           <FAQ sectionTitle="Operations">
             <QuestionAnswer 
               question="Do I need more staff to run Bamboo brands?" 
-              answer="No. Bamboo is designed to fit into your existing operations. Most operators use their current staff and scale as demand grows and there is no need to hire additional staff upfront."
+              answer="No. Bamboo is designed to fit into your existing operations, so there is no need to hire additional staff upfront."
             />
             <QuestionAnswer 
               question="Will this slow down my own restaurant operations?" 
-              answer="No. Bamboo brands are built to run alongside your existing business. Orders flow through the Bamboo app and fit within your current workflow, so they complement your operations."
+              answer="No. Bamboo brands run alongside your existing business and integrates smoothly into your workflow."
             />
             <QuestionAnswer 
               question="Do I need special training?" 
-              answer="No. Bamboo provides clear brand guidelines, portion guides, and final menus so your team can be prepared quickly. Each ticket prints ingredients and portions, so your staff knows exactly what to prepare."
+              answer="No. Menus are designed to be simple, and we provide everything your team needs to fulfill orders with ease."
             />
             <QuestionAnswer 
               question="Can I pause or limit Bamboo orders if I need to?" 
-              answer="Yes. Operators have full control to pause orders at any time directly in the Bamboo app. Orders are set to auto-accept so fulfillment is seamless, but you can pause if needed."
+              answer="Yes. Operators have full control to pause orders at any time directly in the Bamboo app."
             />
           </FAQ>
+
+          
           
           <FAQ sectionTitle="Kitchen and equipment">
             <QuestionAnswer 
               question="Do I need special equipment to run Bamboo brands?" 
-              answer="No. During onboarding, Bamboo recommends brands that align with your existing setup. You'll only be asked to fulfill brands that fit your current operations."
+              answer="No. Bamboo brands are designed to work with the equipment you already have."
             />
             <QuestionAnswer 
               question="Do I need to buy special ingredients?" 
-              answer="Most brands align with standard foodservice inventory. Any additional ingredients required will be included in your final menus before launch, so you can decide if they fit your operation."
+              answer="Most brands use standard ingredients you already stock. Any extras are minimal and covered in your PartnerPay™ earnings."
             />
-            <QuestionAnswer 
-              question="What if a brand requires something I don't have?" 
-              answer="If a brand requires ingredients or setup you don't currently use, you can choose not to fulfill it. Bamboo only recommends brands that are a fit, but operators always have the final choice."
-            />
+            
             <QuestionAnswer 
               question="Do I need special packaging for Bamboo brands?" 
-              answer="Operators use their own standard packaging to fulfill Bamboo orders. Each brand includes packing notes to ensure items are optimized for delivery. Bamboo provides branded stickers (at no cost) to label orders, and packaging costs are already factored into your PartnerPay™ earnings."
+              answer="No. Operators use their own standard packaging. Bamboo provides branded stickers at no cost, and packaging costs are factored into PartnerPay™ earnings."
             />
           </FAQ>
+
+
+
           
           <FAQ sectionTitle="Onboarding">
             <QuestionAnswer 
               question="How long does onboarding take?" 
-              answer="Onboarding usually takes about 2 weeks. The process is designed to be straightforward and can move faster depending on your readiness."
+              answer="Onboarding usually takes about 2 weeks and is designed to be simple and straightforward."
             />
             <QuestionAnswer 
               question="What happens after I complete the onboarding form?" 
-              answer="Our team verifies your information and gives you a quick call for final confirmation before shipping your Bamboo tablet and starting setup."
+              answer="After you complete the form, our team guides you through setup and ships your Bamboo tablet to get you started."
             />
             <QuestionAnswer 
               question="What comes with the Bamboo tablet?" 
-              answer="The tablet arrives preloaded with the Bamboo app and includes the printer app for connecting to your existing printer. Setup instructions are included."
+              answer="The tablet comes preloaded with the Bamboo app so you can start receiving and managing orders right away."
             />
             <QuestionAnswer 
               question="How do I train my staff?" 
-              answer="You'll receive final menus and brand guidelines. These are designed to be easy to follow, so your staff can review and be prepared."
+              answer="We provide brand guidelines and final menus so your team can be prepared quickly."
             />
             <QuestionAnswer 
               question="When do I go live?" 
-              answer="Once your location is set up, menus are finalized, and your team is prepared, you can request activation. Bamboo will activate you within 24 to 48 hours of your request."
+              answer="Once your setup is complete and your team is prepared, you can request activation. Bamboo will activate your location within 24 to48 hours."
             />
           </FAQ>
           
+
+
+
           <FAQ sectionTitle="Brand selection">
             <QuestionAnswer 
               question="Can I choose which Bamboo brands to fulfill?" 
-              answer="Yes. During onboarding, you'll see the available brands and select the ones that best fit your location. You're always in control of which brands you fulfill."
+              answer="Yes. During onboarding, you choose the brands that best fit your location. You’re always in control of which brands you fulfill."
             />
             <QuestionAnswer 
               question="Can I change brands later if some don't work for me?" 
-              answer="Yes. You can remove brands at any time and add new ones as opportunities grow. Many operators start with one or two brands and expand once they see the results."
+              answer="Yes. You can remove brands at any time and add new ones as opportunities grow"
             />
             <QuestionAnswer 
               question="Can I fulfill multiple Bamboo brands at once?" 
-              answer="Yes. Many operators run several Bamboo brands simultaneously through the Bamboo app, and orders are managed seamlessly within your existing operations."
+              answer="Yes. Many operators run multiple Bamboo brands at the same time through the Bamboo app."
             />
             <QuestionAnswer 
               question="How often are new brands added?" 
-              answer="Bamboo is always evolving its portfolio. We design and launch delivery-first QSR brands with scale, demand, and quality in mind. We only keep brands that meet those standards. As new brands are introduced, you'll have the option to add them if they're a fit for your location."
+              answer="Bamboo continually evolves its portfolio, keeping only brands built for quality, demand, and scale. As new brands are introduced, you’ll have the option to add them if they fit your location."
             />
             <QuestionAnswer 
               question="Do I have to take on every Bamboo brand offered?" 
-              answer="No. Bamboo is built for flexibility. You only fulfill the brands you choose, and our portfolio is designed to give operators options that align with their setup and growth goals."
+              answer="No. You only fulfill the brands you choose, with flexibility to align with your goals and setup."
             />
             <QuestionAnswer 
               question="Will I have exclusivity for a brand in my area?" 
-              answer="Yes. When you fulfill a Bamboo brand, you own your delivery radius for that brand. We do not overlap operators in the same area, ensuring there's no cannibalization and that every location has the opportunity to succeed."
+              answer="Yes. When you fulfill a Bamboo brand, you own your delivery radius. We don’t overlap operators, ensuring there’s no cannibalization."
             />
           </FAQ>
           
+
+
+
           <FAQ sectionTitle="Support and partnership">
             <QuestionAnswer 
               question="What kind of support does Bamboo provide?" 
-              answer="Bamboo provides centralized support for all operators. Instead of a single point of contact, your requests are routed to the right Bamboo support team member, ensuring issues are handled quickly and consistently."
+              answer="Bamboo provides centralized support, routing your requests to the right team so issues are handled quickly and consistently."
             />
             <QuestionAnswer 
               question="How do I get help if there's an issue with orders or the app?" 
-              answer="Support is available directly by email, with in-app chat support coming soon."
+              answer="Support is available directly by email, with more options being added to make it even easier to reach us."
             />
             <QuestionAnswer 
               question="Do you help with staff training and onboarding?" 
-              answer="Yes. We provide clear brand guidelines, portion guides, and final menus digitally so your team has everything they need to run smoothly. Our support team is also available if questions come up during onboarding or day-to-day fulfillment."
+              answer="Yes. We provide brand guidelines and final menus so your team has everything they need. Our support team is available if questions come up."
             />
             <QuestionAnswer 
               question="How do you market and promote the brands?" 
-              answer="Bamboo builds and markets the brands nationally, investing in demand generation across platforms. Operators focus on fulfillment locally, ensuring every order is executed to brand standards."
+              answer="Bamboo builds and markets the brands nationally, investing in demand generation so operators can focus entirely on fulfillment."
             />
             <QuestionAnswer 
               question="What if something goes wrong during fulfillment?" 
-              answer="Operators are paid for all completed orders, and Bamboo handles customer service and works directly with delivery platforms to resolve any issues."
+              answer="Operators are paid for all completed orders. Bamboo handles customer service and works directly with delivery platforms to resolve any issues."
             />
           </FAQ>
           
+
+
+
           <FAQ sectionTitle="Technology">
             <QuestionAnswer 
               question="What is the Bamboo tablet and app used for?" 
-              answer="The Bamboo tablet comes preloaded with the Bamboo app, which is how you receive and manage orders. Each order ticket includes the ingredients and portions, so your staff knows exactly what to fulfill."
+              answer="The Bamboo tablet comes preloaded with our app, which is how you receive and manage orders."
             />
             <QuestionAnswer 
               question="What if the Bamboo tablet stops working?" 
-              answer="If your tablet has any issues, Bamboo support will troubleshoot with you. If it can't be fixed remotely, we'll send you a replacement device."
+              answer="If your tablet has any issues, Bamboo support will troubleshoot and send a replacement if needed."
             />
             <QuestionAnswer 
               question="How do orders come through, and how do staff know what to prepare?" 
-              answer="Orders arrive directly in the Bamboo app and print to your kitchen using a connected printer. Each ticket lists the ingredients and portion guide so your team can prepare the order quickly and consistently."
+              answer="Orders flow through the Bamboo app with all the details your staff needs to fulfill them consistently."
             />
-            <QuestionAnswer 
+            {/* <QuestionAnswer 
               question="What if my printer stops working?" 
               answer="The Bamboo app is compatible with most printers. If your existing printer stops working, you can reconnect with another compatible printer from our approved list, or replace your printer if needed."
-            />
+            /> */}
             <QuestionAnswer 
               question="What happens if my location needs to pause orders?" 
-              answer="Operators have full control to pause orders at any time directly from the Bamboo app. This ensures you can manage fulfillment without impacting your core operations."
+              answer="Operators can pause orders at any time directly in the Bamboo app."
             />
             <QuestionAnswer 
               question="Do I need to download or manage anything else?" 
-              answer="No. The Bamboo tablet comes fully set up with the app and includes the printer app needed to connect your existing printer. There's nothing additional to download or manage."
+              answer="No. The Bamboo tablet comes fully set up. Nothing additional is required."
             />
           </FAQ>
           
+
+
+
           <FAQ sectionTitle="Commitment">
             <QuestionAnswer 
               question="Do I have to sign a contract to partner with Bamboo?" 
-              answer="No. There are no binding contracts to review or sign, and you can stop fulfilling at any time. Operators do agree to Bamboo's performance standards during onboarding, but there's no long-term contract. If you leave Bamboo, you'll return the tablet using a prepaid return label provided by us."
+              answer="No. There are no binding long-term contracts, and you can stop at any time. Operators agree to Bamboo’s performance standards during onboarding, and if you leave, we provide a prepaid label to return the tablet."
             />
           </FAQ>
           
           <FAQ sectionTitle="Performance standards">
             <QuestionAnswer 
               question="What standards are operators expected to maintain?" 
-              answer="Operators are expected to maintain key benchmarks such as order accuracy, low cancellation rates, minimal downtime, and consistent fulfillment times. These standards ensure customers have a great experience with Bamboo brands and protect the reputation of every operator in the network."
+              answer="Operators are expected to maintain benchmarks like order accuracy, low cancellations, minimal downtime, and consistent fulfillment times. These standards protect brand quality and ensure a great customer experience."
             />
             <QuestionAnswer 
               question="Why does Bamboo enforce performance standards?" 
-              answer="Bamboo brands are designed for national scale, and consistency is critical. By maintaining high standards, we ensure every customer has the same quality experience: building loyalty, repeat orders, and long-term growth for all operators."
+              answer="Bamboo brands are built for national scale, and consistency is key. High standards ensure every customer has the same quality experience, driving loyalty, repeat orders, and growth for all operators."
             />
             <QuestionAnswer 
               question="What happens if my performance falls below standards?" 
-              answer="If your location falls below benchmarks, Bamboo will notify you and provide support to help you get back on track. If issues continue, locations may be removed from Bamboo to protect brand quality and customer trust."
+              answer="If performance falls below benchmarks, Bamboo will provide support to help you get back on track. Continued issues may result in removal to protect brand quality and customer trust."
             />
           </FAQ>
         </div>
