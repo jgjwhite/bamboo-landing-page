@@ -4,7 +4,7 @@ import Button from './Button'
 const Hero: React.FC = () => {
   return (
     <div className="px-[12px] sm:px-[24px] pt-[12px] sm:pt-[24px] mb-12">
-      <section className="relative text-black pt-12 pb-12 flex items-center justify-center h-[760px] sm:min-h-[600px] lg:min-h-[700px] max-h-[700px] overflow-hidden">
+      <section className="relative text-black pt-12 pb-12 flex items-center justify-center h-[760px] sm:min-h-[600px] lg:min-h-[700px] max-h-[700px] overflow-hidden rounded-xl">
         {/* Video Background */}
         <video 
           autoPlay 

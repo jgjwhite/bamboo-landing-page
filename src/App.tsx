@@ -279,7 +279,7 @@ function App() {
             />
             <QuestionAnswer 
               question="When do I go live?" 
-              answer="Once your setup is complete and your team is prepared, you can request activation. Bamboo will activate your location within 24 to48 hours."
+              answer="Once your setup is complete and your team is prepared, you can request activation. Bamboo will activate your location within 24 to 48 hours."
             />
           </FAQ>
           
