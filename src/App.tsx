@@ -6,6 +6,7 @@ import FAQ from './components/FAQ'
 import QuestionAnswer from './components/QuestionAnswer'
 import Button from './components/Button'
 import { useScrollAnimation } from './hooks/useScrollAnimation'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 
 function App() {
   useScrollAnimation()
@@ -52,6 +53,53 @@ function App() {
             body="Generate new revenue by fulfilling Bamboo brands within your existing operations."
             className="fade-in"
           />
+        </div>
+      </Container>
+      
+      <Container>
+        <div className="headline-pairing pb-12">
+          <h2 className="fade-in">
+            Brands that expand your reach
+          </h2>
+          <p className="fade-in">
+            Our brands give independent restaurants a way to grow orders during slow periods or reach new delivery customers using the kitchen they already have. Each concept is non-competitive with your core menu and designed for efficient execution.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <img 
+            src="/assets/images/brand-hero/egg-smash-brand-hero.png" 
+            alt="Egg Smash brand"
+            className="w-full aspect-square object-cover rounded-lg fade-in"
+          />
+          <img 
+            src="/assets/images/brand-hero/feta-fig-brand-hero.png" 
+            alt="Feta and Fig brand"
+            className="w-full aspect-square object-cover rounded-lg fade-in"
+          />
+          <img 
+            src="/assets/images/brand-hero/hot-nosh-brand-hero.png" 
+            alt="Hot Nosh brand"
+            className="w-full aspect-square object-cover rounded-lg fade-in"
+          />
+          <img 
+            src="/assets/images/brand-hero/bindas-brand-hero.png" 
+            alt="Bindas brand"
+            className="w-full aspect-square object-cover rounded-lg fade-in"
+          />
+        </div>
+
+        <div className="text-center mt-6">
+          <a 
+            href="https://get.bambookitchens.io/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[18px] text-[#0B6B45] hover:text-[#074325] fade-in"
+            
+          >
+            See all of our brands
+            <ArrowRightIcon className="w-3.5 h-3.5" />
+          </a>
         </div>
       </Container>
       
