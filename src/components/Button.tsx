@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({ children, className = '', variant = 'de
   
   return (
     <a 
-      href="https://get.bambookitchens.io/" 
+      href="https://get.bambookitchens.io/start" 
       target="_blank" 
       rel="noopener noreferrer"
       className={`${buttonClass} inline-block px-6 py-4 rounded font-normal ${className}`}
