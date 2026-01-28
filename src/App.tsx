@@ -91,7 +91,7 @@ function App() {
 
         <div className="text-center mt-6">
           <a 
-            href="https://get.bambookitchens.io/start" 
+            href="https://get.bambookitchens.io/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[18px] text-[#0B6B45] hover:text-[#074325] fade-in"
