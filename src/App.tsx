@@ -450,7 +450,7 @@ function App() {
           <div className="flex items-center justify-between">
             {/* Contact Link */}
             <a 
-              href="mailto:contact@bambookitchens.io" 
+              href="mailto:support@bambookitchens.io" 
               className="flex items-center gap-3"
             >
               {/* <EnvelopeIcon className="w-4 h-4" /> */}
