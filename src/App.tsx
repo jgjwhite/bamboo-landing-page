@@ -447,16 +447,7 @@ function App() {
       
       <footer className="footer">
         <div className="w-full max-w-[1200px] mx-auto px-3 sm:px-6">
-          <div className="flex items-center justify-between">
-            {/* Contact Link */}
-            <a 
-              href="mailto:support@bambookitchens.io" 
-              className="flex items-center gap-3"
-            >
-              {/* <EnvelopeIcon className="w-4 h-4" /> */}
-              <p className="text-white caption opacity-70 hover:opacity-100 transition-opacity">Contact Bamboo</p>
-            </a>
-
+          <div className="flex flex-col items-center sm:flex-row sm:justify-between sm:items-center">
             {/* Logo */}
             <div>
               <img 
@@ -469,14 +460,31 @@ function App() {
               />
             </div>
 
-            {/* Book a Call Link */}
-            <a 
-              href="https://calendly.com/bambookitchens" 
-              className="flex items-center gap-3 "
-            >
-              {/* <PhoneIcon className="w-4 h-4 text-white opacity-70" /> */}
-              <p className="caption text-white opacity-70 hover:opacity-100 transition-opacity">Book a Call</p>
-            </a>
+            {/* Links */}
+            <div className="flex items-center gap-5 sm:gap-8 mt-10 sm:mt-0">
+              <a 
+                href="mailto:support@bambookitchens.io" 
+                className="caption text-white opacity-70 hover:opacity-100 transition-opacity"
+              >
+                Email Us
+              </a>
+              <a 
+                href="/assets/Bamboo%20Kitchens%20Privacy%20Policy%20%5BMarch%202026%5D.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="caption text-white opacity-70 hover:opacity-100 transition-opacity"
+              >
+                Privacy Policy
+              </a>
+              <a 
+                href="https://calendly.com/bambookitchens"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="caption text-white opacity-70 hover:opacity-100 transition-opacity"
+              >
+                Book a Call
+              </a>
+            </div>
           </div>
         </div>
       </footer>
